@@ -143,8 +143,12 @@ python COMPLETE_APPLICATION_GUI.py
 * End-to-end GUI-based system for one-time as a whole execution and interaction
 
 ---
+## 🧪 Dataset Citation
+If you use this work in your research, please cite the dataset:
+```bash
+Ali, S.Z. et al. (2026). Users Personal Computer Interaction Logs.zip. Github. URL: https://github.com/SZA-CUI/ITaskA
 
-
+---
 ## 🧪 Research Work Citation
 
 If you use this work in your research, please cite:
