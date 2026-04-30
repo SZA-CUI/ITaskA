@@ -29,10 +29,12 @@ With the increasing need for intelligent desktop assistance systems, understandi
 ## 📁 Dataset
 
 **Description:**
-Activity logging involves recording user desktop interactions into structured log files. This dataset is built using:
+Collection of raw desktop interaction logs was challenging due to privacy concerns, as users were hesitant to share personal activity data for certain periods. Participants were assured their data would be used strictly for research purposes, that enabled us to the voluntary engage of over 10 users. Similar with prior studies, key loggers were installed on participants’ systems to record their daily activities. Activity logging involves recording user desktop interactions into the log files. This dataset is built using:
 
 * **User Activity Logger**: A desktop tool that records user-triggered events and actions
 * **User-Classified Data**: Collected through daily activity record forms filled by users
+
+**Data Availability:**: The dataset collected as a result of the proposed study is available in the current repository with file name "Users "Personal Computer Interaction Logs.zip"
 
 **Key Notes:**
 
