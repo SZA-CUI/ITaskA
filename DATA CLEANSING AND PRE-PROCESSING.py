@@ -1,7 +1,7 @@
 import pandas as pd
 import datetime
 import time
-
+#..............DATA CLEANSING AND PRE-PROCESSING.........................   
 
 df = pd.read_table('PycharmProjects/Code/data/Data set/t_log.txt', delimiter='	', names=('Action', 'Time', 'Processid','Exe','Description'))
 
@@ -91,8 +91,7 @@ with open('PycharmProjects/Code/data/Data set/step1.csv', 'wb') as csvfile:
             
 #print (len(Action2));
 #print (len(Description2));
-#.............................................................................................   
-#print ("............");        
+   
          #j = j + 1
     #i = i + 1         
 #with open('PycharmProjects/Code/data/Data set/step1.csv', 'wb') as csvfile:
