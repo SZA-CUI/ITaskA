@@ -64,7 +64,7 @@ Activity logging involves recording user desktop interactions into structured lo
 1. **Install dependencies**:
 
    ```bash
-   pip install -r requirements.txt
+   pip install -r Required Libraries and Settings.py
    ```
 
 2. **Run data preprocessing**:
@@ -158,7 +158,7 @@ If you use this work in your research, please cite:
 @article{zishanali2026ITaskA, 
   title     = {Time-Aware Semi-Supervised Routine Behavior Learning from Computer User Interaction logs for Intelligent Task Assistance}, 
   author    = {Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar},
-  journal   = {Under Review},
+  journal   = {Under Submission},
   year      = {2026}, 
   note      = {\url{https://github.com/SZA-CUI/ITaskA}}
 }
