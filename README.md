@@ -34,7 +34,7 @@ Collection of raw desktop interaction logs was challenging due to privacy concer
 * **User Activity Logger**: A desktop tool that records user-triggered events and actions
 * **User-Classified Data**: Collected through daily activity record forms filled by users
 
-**Data Availability:**: The dataset collected as a result of the proposed study is available in the current repository with file name "Users "Personal Computer Interaction Logs.zip"
+**Data Availability:**: The dataset collected as a result of the proposed study is available in the current repository with file name "Users Personal Computer Interaction Logs.zip"
 
 **Key Notes:**
 
