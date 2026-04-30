@@ -55,7 +55,7 @@ Activity logging involves recording user desktop interactions into structured lo
 | `ONE DAY ACTIVITY MODELING`                   | Models user behavior for a single day.                                        |
 | `Routine Activity Modeling`                   | Aggregates daily models to learn long-term routine behavior patterns.         |
 | `PREDICTION OF USER'S ROUTINE ACTIVITIES`     | Predicts future user activities based on learned patterns.                    |
-| `Complete Application with GUI with integrated all steps` | End-to-end implementation with graphical interface for user interaction.      |
+| `Complete Application with GUI with integrated all steps` | End-to-end implementation with graphical interface for easy and as a whole execution of all steps through real-time interaction.      |
 
 ---
 
@@ -136,7 +136,7 @@ python COMPLETE_APPLICATION_GUI.py
 * Semi-supervised classified user activities
 * Daily and long-term routine behavior models
 * Predicted next user activities for intelligent assistance
-* End-to-end GUI-based system for real-time interaction
+* End-to-end GUI-based system for one-time as a whole execution and interaction
 
 ---
 
@@ -156,9 +156,7 @@ If you use this work in your research, please cite:
 
 ```bash
 @article{zishanali2026ITaskA, 
-  title     = {Time-Aware Semi-Supervised Routine Behavior
-Learning from Computer User Interaction logs for
-Intelligent Task Assistance}, 
+  title     = {Time-Aware Semi-Supervised Routine Behavior Learning from Computer User Interaction logs for Intelligent Task Assistance}, 
   author    = {Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar},
   journal   = {Under Review},
   year      = {2026}, 
