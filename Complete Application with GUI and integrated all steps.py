@@ -1078,7 +1078,7 @@ class Toplevel1:
             self.Message1.configure(highlightbackground="#d9d9d9")
             self.Message1.configure(highlightcolor="black")
             self.Message1.configure(justify='center')
-            self.Message1.configure(text='''Our work detect and classify meaningful activities form large data and then model these activities into user‘s one day and routine behaviors. It mines the best models of routine activities which may be useful for the prediction of next possible activity of the user.''')
+            self.Message1.configure(text='''Our work detect and classify meaningful activities form large data and then model these activities into userÂ‘s one day and routine behaviors. It mines the best models of routine activities which may be useful for the prediction of next possible activity of the user.''')
             self.Message1.configure(width=150)
    
             self.Label2 = tk.Label(top)
