@@ -46,6 +46,7 @@ Activity logging involves recording user desktop interactions into structured lo
 
 | File Name                                     | Description                                                                   |
 | --------------------------------------------- | ----------------------------------------------------------------------------- |
+| `Users Personal Computer Interaction Logs`           | IT contains the participated users raw personal computer interaction logs and the survey forms filled by individual users for testing and training of the proposed research.  |
 | `DATA CLEANSING AND PRE-PROCESSING`           | Cleans raw log data, removes noise, and prepares structured activity records. |
 | `DAY CLASSIFICATION`                          | Classifies logs based on daily activity segmentation.                         |
 | `ACTIVITY TIME CALCULATION`                   | Computes time spent on each activity from raw logs.                           |
