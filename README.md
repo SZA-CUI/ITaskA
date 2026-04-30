@@ -41,6 +41,7 @@ Collection of raw desktop interaction logs was challenging due to privacy concer
 * Logs capture detailed, low-level desktop activities
 * User-provided labels support semi-supervised learning
 * Due to privacy concerns, dataset sharing may be restricted or anonymized
+* Behavioral patterns are preserved without exposing personal information
 
 ---
 
@@ -143,15 +144,6 @@ python COMPLETE_APPLICATION_GUI.py
 
 ---
 
-## ⚠️ Notes on Data Privacy
-
-Due to the sensitive nature of personal desktop logs:
-
-* Data may be **anonymized or restricted**
-* Sharing is limited to protect user privacy
-* Behavioral patterns are preserved without exposing personal information
-
----
 
 ## 🧪 Research Work Citation
 
