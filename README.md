@@ -1,6 +1,6 @@
 # Time-Aware Semi-Supervised Routine Behavior Learning from Computer User Interaction Logs for Intelligent Task Assistance
 
-This repository contains the source code and datasets for a time-aware semi-supervised framework designed to model routine behavior from computer users' personal interaction logs. The theoretical background of this work is presented in the paper *"Time-Aware Semi-Supervised Routine Behavior Learning from Computer User Interaction Logs for Intelligent Task Assistance"* by Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar, currently under review.
+This repository contains the source code and datasets for a time-aware semi-supervised framework designed to model routine behavior from computer users' personal interaction logs. The theoretical background of this work is presented in the paper *"Time-Aware Semi-Supervised Routine Behavior Learning from Computer User Interaction Logs for Intelligent Task Assistance"* by Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar, currently under submission.
 
 ---
 
