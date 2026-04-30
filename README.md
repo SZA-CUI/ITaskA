@@ -51,11 +51,11 @@ Activity logging involves recording user desktop interactions into structured lo
 | `ACTIVITY TIME CALCULATION`                   | Computes time spent on each activity from raw logs.                           |
 | `ACTIVITY TIME SLOTTING`                      | Divides activities into predefined time slots for temporal analysis.          |
 | `EACH SLOT ACTIVITY TIME CALCULATION`         | Calculates activity durations within each time slot.                          |
-| `Activity Classification`                     | Applies semi-supervised learning to classify user activities.                 |
+| `USER ACTIVITY CLASSIFICATION`                     | Applies semi-supervised learning to classify user activities.                 |
 | `ONE DAY ACTIVITY MODELING`                   | Models user behavior for a single day.                                        |
-| `Routine Activity Modeling`                   | Aggregates daily models to learn long-term routine behavior patterns.         |
+| `ROUTINE ACTIVITY MODELING`                   | Aggregates daily models to learn long-term routine behavior patterns.         |
 | `PREDICTION OF USER'S ROUTINE ACTIVITIES`     | Predicts future user activities based on learned patterns.                    |
-| `Complete Application with GUI with integrated all steps` | End-to-end implementation with graphical interface for easy and as a whole execution of all steps through real-time interaction.      |
+| `Complete Application with GUI and integrated all steps` | End-to-end implementation with graphical interface for easy and as a whole execution of all steps through real-time interaction.      |
 
 ---
 
