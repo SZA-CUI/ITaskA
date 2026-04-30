@@ -1,0 +1,251 @@
+import csv
+import datetime
+import time
+
+
+#  ............................................One day modeling...............................
+description5 = []
+programfile5 = []
+days5 = []
+slots5 = []
+activityclass5 = []
+specificclass5 = []
+
+with open('PycharmProjects/Code/data/Data set/FinalTrain.csv','r') as csv3file:
+    csv3Reader = csv.reader(csv3file)
+    for row in csv3Reader:
+        description5.append(row[0])
+        programfile5.append(row[1])
+        days5.append(row[2])
+        slots5.append(row[3])
+        activityclass5.append(row[4])
+        specificclass5.append(row[5])
+    weekdays = []
+    weekdays.append('Saturday')
+    weekdays.append('Sunday')
+    weekdays.append('Monday')
+    weekdays.append('Tuesday')
+    weekdays.append('Wednesday')
+    weekdays.append('Thursday')
+    weekdays.append('Friday')
+    fmt = '%Y-%m-%d %H:%M:%S'
+    dt = '%Y-%m-%d'
+#[description3[j], programfile3[j], days3[j], slots3[j], activityclass3[j], specificclass3[j]])
+    for j in range(len(description5)):
+        for k in range(7):
+            if days5[j]==weekdays[k]:
+                with open('PycharmProjects/Code/data/Data set/train/'+weekdays[k]+'.csv', 'ab') as csvfile:
+                    writer = csv.writer(csvfile)
+                    writer.writerow(
+                        [description5[j], programfile5[j], days5[j], slots5[j], activityclass5[j], specificclass5[j]])
+
+import csv
+import datetime
+import time
+
+
+#  ............................................One day modeling...............................
+description6 = []
+programfile6 = []
+days6 = []
+slots6 = []
+activityclass6 = []
+specificclass6 = []
+
+with open('PycharmProjects/Code/data/Data set/Predictions.csv','r') as csv3file:
+    csv3Reader = csv.reader(csv3file)
+    for row in csv3Reader:
+        description6.append(row[2])
+        programfile6.append(row[3])
+        days6.append(row[0])
+        slots6.append(row[1])
+        activityclass6.append(row[4])
+        specificclass6.append(row[5])
+    weekdays2 = []
+    weekdays2.append('Saturday')
+    weekdays2.append('Sunday')
+    weekdays2.append('Monday')
+    weekdays2.append('Tuesday')
+    weekdays2.append('Wednesday')
+    weekdays2.append('Thursday')
+    weekdays2.append('Friday')
+    fmt = '%Y-%m-%d %H:%M:%S'
+    dt = '%Y-%m-%d'
+#[description3[j], programfile3[j], days3[j], slots3[j], activityclass3[j], specificclass3[j]])
+    for j in range(len(days6)):
+        for k in range(7):
+            if days6[j]==weekdays2[k]:
+                with open('PycharmProjects/Code/data/Data set/test/'+weekdays2[k]+'.csv', 'ab') as csvfile:
+                    writer = csv.writer(csvfile)
+                    writer.writerow(
+                        [description6[j], programfile6[j], days6[j], slots6[j], activityclass6[j], specificclass6[j]])
+
+
+
+
+# Load libraries
+import pandas
+from pandas.plotting import scatter_matrix
+import matplotlib.pyplot as plt
+from sklearn import model_selection
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.naive_bayes import GaussianNB
+from sklearn.svm import SVC
+
+import csv
+description3 = []
+programfile3 = []
+days3 = []
+slots3 = []
+activityclass3 = []
+specificclass3 = []
+
+        
+# Load Train dataset
+url1 = "PycharmProjects/Code/data/Data set/train/Monday.csv"
+names1 = ['program_desc', 'program_file', 'days', 'slots', 'activity_class', 'specific Class']
+dataset = pandas.read_csv(url1, names=names1)
+# Load Test dataset
+urlT = "PycharmProjects/Code/data/Data set/test/Monday.csv"
+namesT = ['program_desc', 'program_file', 'days', 'slots', 'activity_class', 'specific Class']
+datasetT = pandas.read_csv(urlT, names=namesT)    
+
+
+from sklearn.preprocessing import LabelEncoder
+    #if dataset[column].dtype == type(object):        
+pd = LabelEncoder()
+dataset['program_desc'] = pd.fit_transform(dataset['program_desc'])
+pf = LabelEncoder()
+dataset['program_file'] = pf.fit_transform(dataset['program_file'])
+d = LabelEncoder()
+dataset['days'] = d.fit_transform(dataset['days'])
+s = LabelEncoder()
+dataset['slots'] = s.fit_transform(dataset['slots'])
+ac = LabelEncoder()
+dataset['activity_class'] = ac.fit_transform(dataset['activity_class'])
+sc = LabelEncoder()
+dataset['specific Class'] = sc.fit_transform(dataset['specific Class'])
+
+
+pdT = LabelEncoder()
+datasetT['program_desc'] = pdT.fit_transform(datasetT['program_desc'])
+pfT = LabelEncoder()
+datasetT['program_file'] = pfT.fit_transform(datasetT['program_file'])
+dT = LabelEncoder()
+datasetT['days'] = dT.fit_transform(datasetT['days'])
+sT = LabelEncoder()
+datasetT['slots'] = sT.fit_transform(datasetT['slots'])
+acT = LabelEncoder()
+datasetT['activity_class'] = acT.fit_transform(datasetT['activity_class'])
+scT = LabelEncoder()
+datasetT['specific Class'] = scT.fit_transform(datasetT['specific Class'])
+
+# Split-out validation dataset
+array = dataset.values
+X = array[:,3:4]
+print (X)
+Y = array[:,4]
+print (Y)
+validation_size = 0.10
+seed = 7
+X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed)
+
+
+arrayT = datasetT.values
+XT = arrayT[:,3:4]
+#XT = arrayT[:,1]
+print (XT)
+YT = arrayT[:,4]
+XT_validation=XT
+
+YT_validation=YT
+print YT
+
+
+# Test options and evaluation metric
+seed = 7
+scoring = 'accuracy'
+
+
+# Spot Check Algorithms
+models = []
+models.append(('LR', LogisticRegression()))
+models.append(('LDA', LinearDiscriminantAnalysis()))
+models.append(('KNN', KNeighborsClassifier()))
+models.append(('DecisionTree', DecisionTreeClassifier()))
+models.append(('NB', GaussianNB()))
+models.append(('SVM', SVC()))
+# evaluate each model in turn
+results = []
+names = []
+
+for name, model in models:
+    
+            
+        kfold = model_selection.KFold(n_splits=10, random_state=seed)
+        cv_results = model_selection.cross_val_score(model, X_train, Y_train, cv=kfold, scoring=scoring)
+        results.append(cv_results)
+        names.append(name)
+        
+        msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
+        print(msg)
+
+        
+
+# Make predictions on validation dataset
+knn = KNeighborsClassifier()
+knn.fit(X, Y)
+
+nb=GaussianNB()
+nb.fit(X, Y)
+predictions3 = nb.predict(XT_validation)
+datasetT['Naive Bays class']=predictions3
+
+svm=SVC()
+svm.fit(X, Y)
+predictions4 = svm.predict(XT_validation)
+datasetT['svm']=predictions4
+
+
+from sklearn import tree
+tree = tree.DecisionTreeClassifier()
+tree.fit(X, Y)
+#print X_train
+print tree
+#print Y_train
+#print X_validation
+predictions = tree.predict(XT_validation)
+predictions2 = knn.predict(XT_validation)
+print predictions
+datasetT['activity_class']=predictions
+datasetT['Decision Tree class']=predictions
+datasetT['KNN class']=predictions2
+#predictions=sc.inverse_transform(predictions)
+#print predictions
+datasetT['program_desc'] = pdT.inverse_transform(datasetT['program_desc'])
+datasetT['program_file'] = pfT.inverse_transform(datasetT['program_file'])
+datasetT['days'] = dT.inverse_transform(datasetT['days'])
+datasetT['slots'] = sT.inverse_transform(datasetT['slots'])
+datasetT['activity_class'] = ac.inverse_transform(datasetT['activity_class'])
+datasetT['specific Class'] = scT.inverse_transform(datasetT['specific Class'])
+
+datasetT['Decision Tree class'] = ac.inverse_transform(datasetT['Decision Tree class'])
+datasetT['KNN class'] = ac.inverse_transform(datasetT['KNN class'])
+datasetT['Naive Bays class']=ac.inverse_transform(datasetT['Naive Bays class'])
+datasetT['svm class'] = ac.inverse_transform(datasetT['svm class'])
+
+#print datasetT
+#print sc.inverse_transform(Y_validation)
+# evaluate predictions
+#accuracy = accuracy_score(Y_validation, predictions)
+#print("Accuracy: %.2f%%" % (accuracy * 100.0))
+
+
+datasetT.to_csv('PycharmProjects/Code/data/Predicted.csv')
+print ('PycharmProjects/Code/data/Predicted.csv'+ 'hase been created.')
