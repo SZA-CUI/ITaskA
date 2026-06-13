@@ -1,6 +1,5 @@
-# Time-Aware Semi-Supervised Routine Behavior Learning from Computer User Interaction Logs for Intelligent Task Assistance
-
-This repository contains the source code and datasets for a time-aware semi-supervised framework designed to model routine behavior from computer users' personal interaction logs. The theoretical background of this work is presented in the paper *"Time-Aware Semi-Supervised Routine Behavior Learning from Computer User Interaction Logs for Intelligent Task Assistance"* by Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar, currently under submission.
+# Chrono-Semantic Behavior Mining from Human Computer Interaction logs via Semi-Supervised learning for Proactive Task Assistance
+This repository contains the source code and datasets for a time-aware chrono-semantic semi-supervised framework designed to model routine behavior from computer users' personal interaction logs. The theoretical background of this work is presented in the paper *"Chrono-Semantic Behavior Mining from Human Computer Interaction logs via Semi-Supervised learning for Proactive Task Assistance"* by Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar, currently under submission.
 
 ---
 
@@ -8,10 +7,10 @@ This repository contains the source code and datasets for a time-aware semi-supe
 
 With the increasing need for intelligent desktop assistance systems, understanding user behavior from interaction logs has become essential. This project focuses on:
 
-* Collection of raw desktop interaction log datasets
-* Extraction of time-based activities from raw log entries
-* Implementation of a semi-supervised learning approach for activity recognition
-* Modeling routine user behavior using temporal and contextual features
+* Collection of raw human-computer interaction logs datasets
+* Extraction of chrono-semantic activities from raw log entries
+* Implementation of a semi-supervised learning frmaework for activity recognition
+* Modeling routine user behavior by using combined feature vector of temporal and contextual features
 * Development of predictive algorithms to assist users by forecasting their next possible desktop activity
 
 ---
@@ -20,8 +19,8 @@ With the increasing need for intelligent desktop assistance systems, understandi
 
 * Desktop personal data logs are sensitive, making data collection difficult
 * Extracting meaningful behavior from low-level interaction logs lacking semantic context
-* Identifying periodic routine behaviors despite day-to-day variations
-* Handling inconsistencies in repeated activities with varying temporal and contextual patterns
+* Identifying periodic routine behaviors despite day-to-day variations 
+* Handling inconsistencies in repeated activities with chrono-semantic variations
 * Achieving accurate prediction of future activities from non-uniform behavioral data
 
 ---
@@ -156,7 +155,7 @@ If you use this work in your research, please cite:
 
 ```bash
 @article{zishanali2026ITaskA, 
-  title     = {Time-Aware Semi-Supervised Routine Behavior Learning from Computer User Interaction logs for Intelligent Task Assistance}, 
+  title     = {Chrono-Semantic Behavior Mining from Human Computer Interaction logs via Semi-Supervised learning for Proactive Task Assistance}, 
   author    = {Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar},
   journal   = {Under Submission},
   year      = {2026}, 
