@@ -1,5 +1,5 @@
-# Chrono-Semantic Behavior Mining from Human Computer Interaction logs via Semi-Supervised learning for Proactive Task Assistance
-This repository contains the source code and datasets for a time-aware chrono-semantic semi-supervised framework designed to model routine behavior from computer users' personal interaction logs. The theoretical background of this work is presented in the paper *"Chrono-Semantic Behavior Mining from Human Computer Interaction logs via Semi-Supervised learning for Proactive Task Assistance"* by Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar, currently under submission.
+# Chrono-Semantic Behavior Mining from Human-Computer Interaction logs via Semi-Supervised learning for Proactive Task Assistance
+This repository contains the source code and datasets for a time-aware chrono-semantic semi-supervised framework designed to model routine behavior from computer users' personal interaction logs. The theoretical background of this work is presented in the paper *"Chrono-Semantic Behavior Mining from Human-Computer Interaction logs via Semi-Supervised learning for Proactive Task Assistance"* by Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar, currently under submission.
 
 ---
 
@@ -155,7 +155,7 @@ If you use this work in your research, please cite:
 
 ```bash
 @article{zishanali2026ITaskA, 
-  title     = {Chrono-Semantic Behavior Mining from Human Computer Interaction logs via Semi-Supervised learning for Proactive Task Assistance}, 
+  title     = {Chrono-Semantic Behavior Mining from Human-Computer Interaction logs via Semi-Supervised learning for Proactive Task Assistance}, 
   author    = {Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar},
   journal   = {Under Submission},
   year      = {2026}, 
