@@ -157,7 +157,7 @@ If you use this work in your research, please cite:
 @article{zishanali2026ITaskA, 
   title     = {Chrono-Semantic Behavior Mining from Human-Computer Interaction logs via Semi-Supervised learning for Intelligent Task Assistance}, 
   author    = {Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar},
-  journal   = {Universal Access in the Information Society (Under Review)},
+  journal   = {Universal Access in the Information Society},
   year      = {2026}, 
   note      = {\url{https://github.com/SZA-CUI/ITaskA}}
 }
