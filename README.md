@@ -1,15 +1,15 @@
-# Chrono-Semantic Behavior Mining from Human-Computer Interaction logs via Semi-Supervised learning for Intelligent Task Assistance
-This repository contains the source code and datasets for a time-aware chrono-semantic semi-supervised framework designed to model routine behavior from computer users' personal interaction logs. The theoretical background of this work is presented in the paper *"Chrono-Semantic Behavior Mining from Human-Computer Interaction logs via Semi-Supervised learning for Intelligent Task Assistance"* by Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar, currently under submission.
+# Semi-Supervised Chrono-Semantic Behavior Modeling Using a Log-Based Learning Framework for Proactive Task Assistance
+This repository contains the source code and datasets for a semi-supervised chrono-semantic behavior modeling using a log-based learning framework designed to model routine behavior from computer users' personal interaction logs. The theoretical background of this work is presented in the paper *"Semi-Supervised Chrono-Semantic Behavior Modeling Using a Log-Based Learning Framework for Proactive Task Assistance"* by Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar, currently under submission.
 
 ---
 
 ## 🔍 Project Objective
 
-With the increasing need for intelligent desktop assistance systems, understanding user behavior from interaction logs has become essential. This project focuses on:
+With the increasing need for proactive desktop assistance systems, understanding user behavior from interaction logs has become essential. This project focuses on:
 
-* Collection of raw human-computer interaction logs datasets
+* Collection of raw unstructured computer interaction logs datasets
 * Extraction of chrono-semantic activities from raw log entries
-* Implementation of a semi-supervised learning frmaework for activity recognition
+* Implementation of a semi-supervised log-based learning frmaework for activity recognition
 * Modeling routine user behavior by using combined feature vector of temporal and contextual features
 * Development of predictive algorithms to assist users by forecasting their next possible desktop activity
 
@@ -155,9 +155,9 @@ If you use this work in your research, please cite:
 
 ```bash
 @article{zishanali2026ITaskA, 
-  title     = {Chrono-Semantic Behavior Mining from Human-Computer Interaction logs via Semi-Supervised learning for Intelligent Task Assistance}, 
+  title     = {Semi-Supervised Chrono-Semantic Behavior Modeling Using a Log-Based Learning Framework for Proactive Task Assistance}, 
   author    = {Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar},
-  journal   = {Universal Access in the Information Society},
+  journal   = {Under Submission},
   year      = {2026}, 
   note      = {\url{https://github.com/SZA-CUI/ITaskA}}
 }
