@@ -1,4 +1,4 @@
-# Semi-Supervised Chrono-Semantic Behavior Modeling Using a Log-Based Learning Framework for Proactive Task Assistance
+# Semi-Supervised Chrono-Semantic Behavior Modeling Using a User-Adaptive Log-Based Learning Framework for Proactive Task Assistance
 This repository contains the source code and datasets for a semi-supervised chrono-semantic behavior modeling using a log-based learning framework designed to model routine behavior from computer users' personal interaction logs. The theoretical background of this work is presented in the paper *"Semi-Supervised Chrono-Semantic Behavior Modeling Using a Log-Based Learning Framework for Proactive Task Assistance"* by Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar, currently under submission.
 
 ---
@@ -9,7 +9,7 @@ With the increasing need for proactive desktop assistance systems, understanding
 
 * Collection of raw unstructured computer interaction logs datasets
 * Extraction of chrono-semantic activities from raw log entries
-* Implementation of a semi-supervised log-based learning frmaework for activity recognition
+* Implementation of a semi-supervised user-adaptive log-based learning framework for activity recognition
 * Modeling routine user behavior by using combined feature vector of temporal and contextual features
 * Development of predictive algorithms to assist users by forecasting their next possible desktop activity
 
@@ -155,7 +155,7 @@ If you use this work in your research, please cite:
 
 ```bash
 @article{zishanali2026ITaskA, 
-  title     = {Semi-Supervised Chrono-Semantic Behavior Modeling Using a Log-Based Learning Framework for Proactive Task Assistance}, 
+  title     = {Semi-Supervised Chrono-Semantic Behavior Modeling Using a User-Adaptive Log-Based Learning Framework for Proactive Task Assistance}, 
   author    = {Ali, Seyyad Zishan and Mirza, Hamid Turab and Bilal, Ahmad and Hussain, Ibrar},
   journal   = {Under Submission},
   year      = {2026}, 
